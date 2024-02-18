@@ -22,7 +22,7 @@ IZIN=$(curl -sS https://raw.githubusercontent.com/landeanv/v5/master/IZIN | awk 
 if [ $MYIP = $IZIN ]; then
 echo "IZIN DI TERIMA!!"
 else
-echo "Akses di tolak!! Silakan Hubungi Admin";
+echo "Akses di lotak!! Silakan Hubungi Admin";
 exit 0
 fi
 localip=$(hostname -I | cut -d\  -f1)
