@@ -18,7 +18,7 @@ echo "SCRIPT ANDA EXPIRED";
 exit 0
 fi
 }
-IZIN=$(curl -sS https://raw.githubusercontent.com/landeanv/v5/master/gerung | grep '{print $4}' | grep $MYIP)
+IZIN=$(curl -sS https://raw.githubusercontent.com/landeanv/v5/master/gerung | awk '{print $4}' | grep $MYIP)
 if [ $MYIP = $IZIN ]; then
 echo "IZIN DI TERIMA!!"
 else
